@@ -12,6 +12,7 @@ function App() {
         <Link to="/users">Users</Link>
         <Link to="/about">About</Link>
       </nav>
+      <p>Backend URL: {process.env.REACT_APP_BACKEND_URL}</p>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/users" element={<Users />} />
